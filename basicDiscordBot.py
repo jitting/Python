@@ -25,7 +25,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 client = Client(command_prefix='-', intents=intents) # Used for slash commands
 
-GUILD_ID = discord.Object(id=1300524027294646335)
+GUILD_ID = discord.Object(id="ENTER SERVER ID")
 
 @client.tree.command(name="greet", description="Greets the user", guild=GUILD_ID)
 async def greet(interaction: discord.Interaction):
